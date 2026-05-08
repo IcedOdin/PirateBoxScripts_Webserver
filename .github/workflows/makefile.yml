@@ -3,7 +3,7 @@ name: PirateBox WS Build
 on:
   push:
     branches:
-      - main
+      - Build
     tags:
       - 'v*'
 
