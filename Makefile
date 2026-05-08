@@ -21,7 +21,7 @@ OPENWRT_BIN_FOLDER=$(OPENWRT_FOLDER)/bin
 WORKFOLDER=tmp
 
 ###IRC deployment
-IRC_GITHUB_ULR=git://github.com/jrosdahl/miniircd.git
+IRC_GITHUB_ULR=https://github.com/jrosdahl/miniircd.git
 IRC_WORK_FOLDER=$(WORKFOLDER)/irc
 IRC_SRC_SERVER=$(IRC_WORK_FOLDER)/miniircd
 IRC_TARGET_SERVER=$(PB_SRC_FOLDER)/bin/miniircd.py
