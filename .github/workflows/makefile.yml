@@ -59,6 +59,11 @@ jobs:
         run: |
           find . -maxdepth 2 -type f | sort
 
+      - name: Show generated files
+        run: |
+          echo "=== GENERATED FILES ==="
+          find . -type f | sort
+
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
         with:
@@ -71,8 +76,8 @@ jobs:
         with:
           name: piratebox-image
           path: |
-            *.img.gz
-            *.img.tar.gz
+            *.gz
+            *.tar.gz
 
   release:
     if: startsWith(github.ref, 'refs/tags/v')
